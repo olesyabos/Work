@@ -30,6 +30,8 @@ int numbersItems = CheckArray(arrayOfStrings, lengthLimit);
 
 string[] newArrayOfStrings = new string[numbersItems];
 
+FillNewArray(arrayOfStrings, newArrayOfStrings, lengthLimit);
+
 int CheckArray(string[] array, int lengthLimit)
 {
     int result = 0;
@@ -39,3 +41,17 @@ int CheckArray(string[] array, int lengthLimit)
     }
     return result;
 }
+
+void FillNewArray(string[] oldArray, string[] newArray, int lengthLimit)
+{
+    int temp = 0;
+    for (int i = 0; i < oldArray.Length; i++)
+    {
+        if (oldArray[i].Length <= lengthLimit)
+        {
+            newArray[temp] = oldArray[i];
+            temp++;
+        }
+    }
+}
+
