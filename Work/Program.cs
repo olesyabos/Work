@@ -24,3 +24,4 @@ else
 {
     arrayOfStrings = new string[] { "12547", "2", "23", "cola" };
 }
+int lengthLimit = 3;
