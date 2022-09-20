@@ -67,3 +67,12 @@ string PrintArray(string[] array)
     result += " ]";
     return result;
 }
+int InputNumbers(string input)
+{
+    Write(input);
+    int output = Convert.ToInt32(ReadLine());
+
+    return output;
+}
+
+
