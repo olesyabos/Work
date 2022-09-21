@@ -31,6 +31,8 @@ int numbersItems = CheckArray(arrayOfStrings, lengthLimit);
 string[] newArrayOfStrings = new string[numbersItems];
 
 FillNewArray(arrayOfStrings, newArrayOfStrings, lengthLimit);
+WriteLine($"{PrintArray(newArrayOfStrings)}");
+
 
 int CheckArray(string[] array, int lengthLimit)
 {
